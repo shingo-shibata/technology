@@ -1,12 +1,33 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "Microposts", '#', id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
-        <li><%= link_to "Help",   '#' %></li>
-        <li><%= link_to "Log in", '#' %></li>
-      </ul>
-    </nav>
-  </div>
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-inner">
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1 class="logo">
+            <%= image_tag "logo2.png" %>
+          </h1>
+        </div>
+      </div>
+      <div class = "collapse navbar-collapse" id="mainNav">
+        <h1>
+          <ul class="nav navbar-nav navbar-right">
+              <li><%= link_to "Top",   '#' %></li>
+              <li><%= link_to "Company",   '#' %></li>
+              <li><%= link_to "Approach",   '#' %></li>
+              <li><%= link_to "Service", '#' %></li>
+              <li><%= link_to "Member", '#' %></li>
+              <li><%= link_to "Event", '#' %></li>
+              <li><%= link_to "Learning", '#' %></li>
+          </ul>
+        </h1>
+      </div>
+    </div>
+  </nav>
 </header>
+
