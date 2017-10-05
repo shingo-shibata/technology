@@ -1,10 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
 /* universal */
 
 body {
+  font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
   padding-top: 60px;
 }
 
@@ -29,6 +29,25 @@ textarea {
   margin-bottom: 10px;
 }
 
+/* navigation */  
+.nav {
+  display: inline-block;
+  text-align: right;
+  font-family: AmericanTypewriter-Bold;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+.footer  {
+  text-align: center;
+  font-family:  HiraKakuPro;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+
 /* top-message */
 .jumbotron h1 {
   margin: 0;
@@ -36,6 +55,7 @@ textarea {
   font-size: 30px;
   color: #ffffff;
   text-align: center;
+  font-family: HiraKakuPro;
 }
   
 .jumbotron p {
@@ -43,14 +63,13 @@ textarea {
   padding: 15px;
   font-size: 18px;
   color: #ffffff;
-  max-width: 800px;
   text-align: center;
 }
   
 
 .logo2 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 /* メインバー */
@@ -100,6 +119,7 @@ h1 {
   font-size: 20px;
   letter-spacing: -2px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 
@@ -126,14 +146,4 @@ h4 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
-}
-
-/* navigation */  
-.nav {
-  display: inline-block;
-  text-align: right;
-  font-family: AmericanTypewriter-Bold;
-  font-size: 16px;
-  color: #ffffff;
-  letter-spacing: 0;
 }
