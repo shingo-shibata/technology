@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   root to: 'static_pages#home'
+  
+  get "static_pages/seminar" => 'static_pages#seminar'
+  get "static_pages/middle" => 'static_pages#middle'
+  get "static_pages/pmo" => 'static_pages#pmo'
+  get "static_pages/about" => 'static_pages#about'
+  get "static_pages/approach" => 'static_pages#approach'
+  get "static_pages/member" => 'static_pages#member'  
+  get "static_pages/voice" => 'static_pages#voice'  
 
   ##### 問い合わせフォーム
   get 'inquiry' => 'inquiry#index' 

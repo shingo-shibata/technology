@@ -5,13 +5,12 @@
 
 body {
   font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
-  padding-top: 76px;
+  padding-top: 60px;
 }
 
 .container {
     max-width: 100%;
 }
-
 
 section {
   overflow: auto;
@@ -29,6 +28,7 @@ textarea {
   margin-bottom: 10px;
 }
 
+
 /* navigation */  
 .nav {
   display: inline-block;
@@ -37,6 +37,11 @@ textarea {
   font-size: 16px;
   color: #ffffff;
   letter-spacing: 0;
+}
+
+.logo {
+  text-align: left;
+  margin-top: 12px;
 }
 
 .footer  {
@@ -61,11 +66,11 @@ textarea {
 .jumbotron p {
   margin: 0;
   padding: 15px;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   text-align: center;
 }
-  
+
 .logo2 {
   text-align: center;
   margin-top: 30px;
@@ -79,6 +84,12 @@ textarea {
   font-size: 11px;
   text-align: center;
 }
+
+ h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+ }
 
 /* メインバー */
 .gaiyo a {
@@ -161,41 +172,81 @@ textarea {
   margin-bottom: -15px;
 }
 
-/* typography */
+/* explanation */
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 20px;
-  letter-spacing: -2px;
+.exp p {
+  font-size: 16px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  font-weight: bold;
+  margin-right: 20px;
 }
 
 
-h2 {
-  margin-top: 30px;
+.exp h1 {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.exp lavel {
+  display: block;
+  background-color: #2935F4;
   text-align: center;
-  font-size: 30px;
-  letter-spacing: -2px;
-  font-weight: bold;
+  text-decoration: none;
 }
 
-h3 {
+.exp h2{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.exp h3 {
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ECFAF7;
+  color: #000000;
+  font-size: 16px;
+  font-size: 1.1em;
+  line-height: 1.7em;
   text-align: left;
-  text-size:8px;
-  letter-spacing: 0.02em;
-  text-shadow: 1px 1px 0px #000;
-  }
-h4 {
+}
+
+.exp h4 {
+  font-size: 20px;
   text-align: left;
-  text-size:5px;
-  letter-spacing: 0.15em;
-  }
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #0728F5;
+}
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+
+h5 {
+  font-size: 34px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-weight: bold;
 }
