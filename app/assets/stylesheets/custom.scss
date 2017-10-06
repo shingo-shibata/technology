@@ -5,7 +5,7 @@
 
 body {
   font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
-  padding-top: 60px;
+  padding-top: 76px;
 }
 
 .container {
@@ -61,15 +61,23 @@ textarea {
 .jumbotron p {
   margin: 0;
   padding: 15px;
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   text-align: center;
 }
   
-
 .logo2 {
   text-align: center;
   margin-top: 30px;
+}
+
+.logo3 {
+  text-align: center;
+}
+
+.logo3 p {
+  font-size: 11px;
+  text-align: center;
 }
 
 /* メインバー */
@@ -107,6 +115,50 @@ textarea {
   padding-bottom: 15px;
   background-color: #2935F4;
   font-size: 16px;
+}
+
+/* inquiry */
+.page-header {
+  text-align: center;
+}
+
+.inquiry {
+  text-align: center;
+}
+
+.inquiry h1 {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: -15px;
+  font-weight: bold;
+}
+
+.inquiry h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.inquiry h3 {
+  font-size: 12px;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.inquiry p {
+  font-size: 11px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.inquiry h4 {
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: -15px;
 }
 
 /* typography */

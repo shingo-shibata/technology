@@ -1,0 +1,70 @@
+<%= form_for @reserve, :url => reserve_confirm_path do |f| %>
+  
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <div class="page-header">
+          <h1>テクテック講座申し込み画面</h1>
+        </div>
+            <div class="logo3">
+                <%= link_to image_tag("inquiry.png"), inquiry_path %>
+                <p>その他サービスの申し込み<br>
+                ご質問は問い合せをご利用ください。</p><br>
+            </div>        
+        
+        <% if @reserve.errors.any? %>
+          <div class="alert alert-danger" role="alert">
+            <strong>入力内容にエラーがあります</strong>
+            <ul>
+              <% @reserve.errors.each do |attr, msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+        <div class="inquiry">            
+        
+            <h1>申し込み日程<span class="text-danger"> (必須)</span></h1><br>
+            <h3>
+             <%= f.radio_button :reserved_day, '20171021' %>10/21（土曜日）<br><br>
+             <%= f.radio_button :reserved_day, '20171108' %>11/8（土曜日）<br><br>
+             <%= f.radio_button :reserved_day, '20171208' %>12/8（土曜日）<br><br>
+             <%= f.radio_button :reserved_day, '20171221' %>12/21（土曜日）<br><br><br>
+            </h3>
+
+            <h1>名前<span class="text-danger"> (必須)</span></h1><br>
+            <%= f.text_field :name, :size =>"35" %><br>
+          
+            <h1>領収書先（個人/法人）<span class="text-danger"> (必須)</span></h1><br>
+            <p>※以下選択に合わせた電話番号・住所を記載ください。</p>
+            
+            <h3>
+             <%= f.radio_button :sponsor, '個人' %>個人
+             <%= f.radio_button :sponsor, '法人' %>法人<br><br><br>
+            </h3>
+            
+            <h1>所属（お勤め先・学校など）<span class="text-danger"> (必須)</span></h1><br>
+            <%= f.text_field :belonging, :size =>"35" %><br>
+            
+            <h1>メールアドレス<span class="text-danger"> (必須)</span></h1><br>
+            <%= f.text_field :email, :size =>"35" %><br>
+      
+            <h1>電話番号<span class="text-danger"> (必須)</span></h1><br>
+            <%= f.text_field :phone, :size =>"35" %><br>
+            
+            <h1>郵便番号<span class="text-danger"> (必須)</span></h1><br>
+            <h4><%= f.text_field :post, :size =>"13" %></h4><br>
+
+            <h1>都道府県<span class="text-danger"> (必須)</span></h1><br>
+            <h4><%= f.text_field :address1, :size =>"13" %></h4><br>
+
+            <h1>市区町村番地ビル名<span class="text-danger"> (必須)</span></h1><br>
+            <%= f.text_field :address2, :size =>"35" %><br>
+
+            <h1>ご要望等あればコメントしてください</h1><br>
+            <%= f.text_area :message, :size =>"35x10" %><br>
+ 
+            <h2><%= f.submit '確認', class: 'btn btn-primary' %></h2>
+        <% end %>
+        </div>
+    </div>
+</div>

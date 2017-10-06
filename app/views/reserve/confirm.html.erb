@@ -1,0 +1,94 @@
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+
+    <div class="page-header">
+      <h1>テクテック講座予約確認画面</h1>
+    </div>
+
+    <%= form_for @reserve, :url => reserve_thanks_path do |f| %>
+            <table class="table">
+              <tr>
+                <th>申し込み日程</th>
+                <td>
+                  <%= f.hidden_field :reserved_day %>
+                  <%= @reserve.reserved_day %>
+                </td>
+              </tr>
+
+              <tr>
+                <th>名前</th>
+                <td>
+                  <%= f.hidden_field :name %>
+                  <%= @reserve.name %>
+                </td>
+              </tr>
+              
+              <tr>
+                <th>領収書先</th>
+                <td>
+                  <%= f.hidden_field :sponsor %>
+                  <%= @reserve.sponsor %>
+                </td>
+              </tr>
+              
+              <tr>
+                <th>所属</th>
+                <td>
+                  <%= f.hidden_field :belonging %>
+                  <%= @reserve.belonging %>
+                </td>
+              </tr>
+              
+              <tr>
+                <th>メールアドレス</th>
+                <td>
+                  <%= f.hidden_field :email %>
+                  <%= @reserve.email %>
+                </td>
+              </tr>
+          
+              <tr>
+                <th>電話番号</th>
+                <td>
+                  <%= f.hidden_field :phone %>
+                  <%= @reserve.phone %>
+                </td>
+              </tr>
+              
+              <tr>
+                <th>郵便番号</th>
+                <td>
+                  <%= f.hidden_field :post %>
+                  <%= @reserve.post %>
+                </td>
+              </tr>
+          
+              <tr>
+                <th>都道府県</th>
+                <td>
+                  <%= f.hidden_field :address1 %>
+                  <%= @reserve.address1 %>
+                </td>
+              </tr>
+
+              <tr>
+                <th>市区町村番地</th>
+                <td>
+                  <%= f.hidden_field :address2 %>
+                  <%= @reserve.address2 %>
+                </td>
+              </tr>
+          
+              <tr>
+                <th>追加コメント</th>
+                <td>
+                  <%= f.hidden_field :message %>
+                  <%= simple_format(@reserve.message) %>
+                </td>
+              </tr>
+            </table>
+            <h2><%= f.submit '送信', class: 'btn btn-primary' %>
+            <%= f.submit '戻る', class: 'btn btn-primary', name: 'back' %></h2>
+    <% end %>
+  　</div>
+</div>
