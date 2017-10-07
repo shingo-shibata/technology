@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get "static_pages/approach" => 'static_pages#approach'
   get "static_pages/member" => 'static_pages#member'  
   get "static_pages/voice" => 'static_pages#voice'  
+  
+
 
   ##### 問い合わせフォーム
   get 'inquiry' => 'inquiry#index' 

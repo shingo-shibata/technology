@@ -17,15 +17,11 @@ section {
 }
 
 textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+  width: 100%;
+  height: 300px;
+  text-align: left;
+  margin-left: 0px;
+  margin-bottom: -15px;
 }
 
 
@@ -34,9 +30,10 @@ textarea {
   display: inline-block;
   text-align: right;
   font-family: AmericanTypewriter-Bold;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   letter-spacing: 0;
+  margin-top: -13px;
 }
 
 .logo {
@@ -71,9 +68,19 @@ textarea {
   text-align: center;
 }
 
+.logo2 p {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
 .logo2 {
   text-align: center;
   margin-top: 30px;
+}
+
+.logo2 a:hover{
+  opacity: 0.8;
 }
 
 .logo3 {
@@ -84,6 +91,12 @@ textarea {
   font-size: 11px;
   text-align: center;
 }
+
+.logo3 a:hover{
+  opacity: 0.8;
+}
+
+
 
  h2 {
   font-size: 30px;
@@ -140,7 +153,6 @@ textarea {
 .inquiry h1 {
   font-size: 14px;
   text-align: left;
-  margin-left: 30px;
   margin-top: 15px;
   margin-bottom: -15px;
   font-weight: bold;
@@ -155,7 +167,6 @@ textarea {
 .inquiry h3 {
   font-size: 12px;
   text-align: left;
-  margin-left: 30px;
   margin-top: 10px;
   margin-bottom: -15px;
 }
@@ -163,12 +174,10 @@ textarea {
 .inquiry p {
   font-size: 11px;
   text-align: left;
-  margin-left: 30px;
 }
 
 .inquiry h4 {
   text-align: left;
-  margin-left: 30px;
   margin-bottom: -15px;
 }
 
