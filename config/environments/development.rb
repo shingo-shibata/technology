@@ -43,10 +43,10 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   	address:               'smtp17.gmoserver.jp',
   	port:      	           587,
-  	domain:                'edutech.co.jp',
+  	domain:                'smtp17.gmoserver.jp',
   	user_name:             'welcome@edutech.co.jp',
   	password:              '6Cy7#bFr',
-  	authentication:        'plain',
+  	authentication:        'login',
   	enable_starttls_auto:  true
   }
 
