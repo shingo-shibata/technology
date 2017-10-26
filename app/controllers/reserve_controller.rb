@@ -41,5 +41,4 @@ class ReserveController < ApplicationController
       :reserved_day, :name, :sponsor, :belonging, :email, :phone, :post, :address1, :address2, :message
     )
   end
-
 end

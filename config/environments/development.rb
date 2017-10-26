@@ -41,12 +41,12 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  	address:               'smtp.gmail.com',
+  	address:               'smtp17.gmoserver.jp',
   	port:      	           587,
-  	domain:                'smtp.gmail.com',
-  	user_name:             'munjapan8888@gmail.com',
-  	password:              'Takadano8888',
-  	authentication:        'login',
+  	domain:                'edutech.co.jp',
+  	user_name:             'welcome@edutech.co.jp',
+  	password:              '6Cy7#bFr',
+  	authentication:        'plain',
   	enable_starttls_auto:  true
   }
 
