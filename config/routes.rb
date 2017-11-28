@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get "static_pages/member" => 'static_pages#member'  
   get "static_pages/voice" => 'static_pages#voice'  
   get "static_pages/learning" => 'static_pages#learning'  
-  get "static_pages/privacy" => 'static_pages#privacy'  
+  get "static_pages/privacy" => 'static_pages#privacy' 
+  get "static_pages/development" => 'static_pages#development' 
 
   ##### 問い合わせフォーム
   get 'inquiry' => 'inquiry#index' 
