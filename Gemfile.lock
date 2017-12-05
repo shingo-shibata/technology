@@ -164,7 +164,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
-  google-analytics-rails
+  google-analytics-rails (= 1.1.1)
   jbuilder (~> 2.0)
   jquery-rails
   pg
