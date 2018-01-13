@@ -44,7 +44,7 @@ Rails.application.configure do
   	address:               'smtp.gmail.com',
   	port:      	           587,
   	domain:                'gmail.com',
-  	user_name:             'welcome.edutech@gmail.com',
+  	user_name:             'edutech.reply.only@gmail.com',
   	password:              'Kebin0102',
   	authentication:        'plain',
   	enable_starttls_auto:  true

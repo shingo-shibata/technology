@@ -1,6 +1,6 @@
 class ReserveMailer < ApplicationMailer
   ##### 送信元アドレス
-  default from: "welcome.edutech@gmail.com"
+  default from: "edutech.reply.only@gmail.com"
   ##### 送信先アドレス
   default to: "admin@edutech.co.jp"
 
