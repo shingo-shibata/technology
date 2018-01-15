@@ -38,14 +38,17 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  mail = 'edutech.no.reply@gmail.com'
+  pass = 'Kebin0102'
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   	address:               'smtp.gmail.com',
   	port:      	           587,
   	domain:                'gmail.com',
-  	user_name:             'edutech.reply.only@gmail.com',
-  	password:              'Kebin0102',
+  	user_name:             mail,
+  	password:              pass,
   	authentication:        'plain',
   	enable_starttls_auto:  true
   }
