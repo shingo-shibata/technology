@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get "static_pages/privacy" => 'static_pages#privacy' 
   get "static_pages/development" => 'static_pages#development' 
   get "static_pages/media" => 'static_pages#media'
-  
+  get "static_pages/sitemap" => 'static_pages#sitemap'  
   
   ##### メディアリンク
   get "static_pages/ainow" => redirect("http://ainow.ai/")
