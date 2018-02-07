@@ -8,8 +8,8 @@
         </div>
             <div class="logo3">
                 <%= link_to image_tag("inquiry.png"), inquiry_path %>
-                <p>その他サービスの申し込み<br>
-                ご質問は問い合せをご利用ください。</p><br>
+                <h4>その他サービスの申し込み<br>
+                ご質問は問い合せをご利用ください。</h4><br>
             </div>        
         
         <% if @reserve.errors.any? %>
@@ -25,22 +25,20 @@
         <div class="inquiry">            
         
             <h1>申し込み日程<span class="text-danger"> (必須)</span></h1><br>
-            <h3>
+            <h4>
              <%= f.radio_button :reserved_day, '20180203' %>2/3 AI×IoT研修（土曜日）場所：アクトコール本社5F<br><br>
              <%= f.radio_button :reserved_day, '20180217' %>2/17 ブロックチェーン研修（土曜日）場所：アクトコール本社5F<br><br>
              <%= f.radio_button :reserved_day, '20180303' %>3/3 AI×IoT研修（土曜日）場所：アクトコール本社5F<br><br><br>
-            </h3>
+            </h4>
 
             <h1>名前<span class="text-danger"> (必須)</span></h1><br>
             <h4><%= f.text_field :name, :size =>"27" %></h4><br>
           
             <h1>領収書先（個人/法人）<span class="text-danger"> (必須)</span></h1><br>
-            <p>※以下選択に合わせた電話番号・住所を記載ください。</p>
-            
-            <h3>
+            <h4>※以下選択に合わせた電話番号・住所を記載ください。<br>  <br>         
              <%= f.radio_button :sponsor, '個人' %>個人
              <%= f.radio_button :sponsor, '法人' %>法人<br><br><br>
-            </h3>
+            </h4>
             
             <h1>所属（お勤め先・学校など）<span class="text-danger"> (必須)</span></h1><br>
             <h4><%= f.text_field :belonging, :size =>"27" %></h4><br>
@@ -59,10 +57,21 @@
 
             <h1>市区町村番地ビル名<span class="text-danger"> (必須)</span></h1><br>
             <h4><%= f.text_field :address2, :size =>"27" %></h4><br>
+            
+            <h1>申込同意事項<span class="text-danger"> (必須)</span></h1><br>
+            <h4>【キャンセルポリシー】<br>
+                ・前日以降のご返金はできません。<br>
+                ・1週間～2日前まで70％ご返金いたします。<br><br>
+                【研修内容の取扱い】<br>
+                ・研修で提供する文章については個人利用以外に再販などの事業目的の利用に向けた複製をお断りしています。<br><br>
+             <%= f.radio_button :policy, 'agree the policy' %>以上内容への同意表明<br><br>
+            </h4>   
 
             <h1>ご要望等あればコメントしてください</h1><br>
             <%= f.text_area :message %><br>
- 
+
+         
+
             <h2><%= f.submit '確認', class: 'btn btn-primary' %></h2>
         <% end %>
         </div>

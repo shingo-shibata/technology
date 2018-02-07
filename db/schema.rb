@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171006013627) do
+ActiveRecord::Schema.define(version: 20180207021107) do
 
   create_table "inquiries", force: :cascade do |t|
     t.string   "name"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20171006013627) do
     t.integer  "post"
     t.string   "address1"
     t.string   "address2"
+    t.string   "policy"
   end
 
 end
