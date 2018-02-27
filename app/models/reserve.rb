@@ -7,5 +7,4 @@ class Reserve < ActiveRecord::Base
   validates_numericality_of :post, { :message => '郵便番号は数字で入力して下さい。'}
   validates :address1,  length: { minimum: 1, :too_short => '都道府県を入力して下さい。'}
   validates :address2,  length: { minimum: 1, :too_short => '市区町村を入力して下さい。'}
-  validates :policy,  presence: { :message => '同意にチェックして下さい。'}
 end
