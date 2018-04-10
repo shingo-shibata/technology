@@ -118,6 +118,7 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
+    ruby-oembed (0.12.0)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -172,6 +173,7 @@ DEPENDENCIES
   meta-tags
   pg (= 0.19.0)
   rails (= 4.2.7.1)
+  ruby-oembed
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
