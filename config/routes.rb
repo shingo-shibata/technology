@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "static_pages/sitemap" => 'static_pages#sitemap' 
   get "static_pages/strength" => 'static_pages#strength'  
   get "static_pages/consulting" => 'static_pages#consulting' 
+  get "static_pages/consulting2" => 'static_pages#consulting2'
   get "static_pages/bot" => 'static_pages#bot' 
   get "static_pages/service" => 'static_pages#service'
   
