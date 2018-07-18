@@ -146,13 +146,30 @@
         </div>
     
     <div class="row">
-        <div class="col-xs-12" style="padding:0; background:#ffffff;">
-            <h2>主要な取引先／サービス提供先</h2>
-
+        <div class="col-md-6 col-sm-6 col-xs-12" style="padding:0; background:#ffffff;">
+            <h2>主要な取引先／サービス提供先</h2><br><br><br>
            <img class="img-responsive center-block" src=<%= asset_path "houjin.png" %>>
-        
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" style="padding:0; background:#ffffff;">
+            <h2>パートナー企業</h2>
+            <div class="logo2">
+                <a href="static_pages/kikagaku">
+                    <img class="img-responsive center-block" src=<%= asset_path "logo_kikagaku.png" %>>
+                </a>
+                <a href="static_pages/justincase">
+                    <img class="img-responsive center-block" src=<%= asset_path "logo_justincase.png" %>>
+                </a>
+                <a href="static_pages/glc">
+                    <img class="img-responsive center-block" src=<%= asset_path "logo_GLC.png" %>>
+                </a>
+                <a href="static_pages/aisprits">
+                    <img class="img-responsive center-block" src=<%= asset_path "logo_aisprits.png" %>>
+                </a>
+            </div>
         </div>
     </div>
+    
+   
         <div class="col-xs-12" style="padding:0; background:#ffffff; height:100px;">
             <div class="logo2">
                 <%= link_to image_tag("yoyaku.png"), reserve_path %>

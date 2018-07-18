@@ -63,6 +63,12 @@ Rails.application.routes.draw do
   get "static_pages/itmediafintech" => redirect("http://www.itmedia.co.jp/enterprise/subtop/fintech/index.html")
   get "static_pages/finte" => redirect("https://www.enigma.co.jp/media/")
  
+  ##### パートナーリンク
+  get "static_pages/kikagaku" => redirect("https://www.kikagaku.co.jp/")
+  get "static_pages/justincase" => redirect("https://justincase.jp/")
+  get "static_pages/glc" => redirect("https://geeklabs.co.jp/")
+  get "static_pages/aisprits" => redirect("http://aispirits.com/") 
+ 
   ##### ノウハウ伝授リンク
   get "learning" => 'learning#index' 
   get "learning/shin-nihon" => redirect("http://www.meti.go.jp/committee/sankoushin/shin_sangyoukouzou/pdf/013_06_00.pdf")
