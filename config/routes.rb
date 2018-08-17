@@ -21,6 +21,9 @@ Rails.application.routes.draw do
   get "static_pages/bot" => 'static_pages#bot' 
   get "static_pages/service" => 'static_pages#service'
   
+  ##### Udemyリンク
+  get "static_pages/udemy" => redirect("https://www.udemy.com/ai-business/learn/v4/overview")
+  
   ##### メディアリンク
   get "static_pages/ainow" => redirect("http://ainow.ai/")
   get "static_pages/robotstart" => redirect("https://robotstart.info/")
