@@ -80,6 +80,7 @@ Rails.application.routes.draw do
   get "learning/data2" => 'learning#data2'
   
   get "static_pages/learning/business1" => redirect("http://www.edutech.co.jp/learning/business1")
+  get "learning/seminar" => redirect("http://www.edutech.co.jp/static_pages/seminar")
 
   ##### 問い合わせフォーム
   get 'inquiry' => 'inquiry#index' 
