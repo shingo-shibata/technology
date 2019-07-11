@@ -1,94 +1,124 @@
-        <div class="jumbotron" style="background:url(<%= asset_path "main.png" %>) no-repeat; background-site:cover;">
-            <h1>ゼロからデータサイエンスの学び方</h1>
-        </div>
-        
-
-
-<div class="learning">            
-    <div class="row">
-    <div class="col-md-8 col-md-offset-2" style="background:#ffffff; " >
-        <h4>そもそもデータサイエンティストとなどのような人材なのか？</h4>
-        <div class="col-xs-12" style="background:#A8ACAB; height:1px;" ></div>
-        <p>
-        　社内のデータ分析を担当したり、AIモデル構築を担ったりするデータサイエンティストの役割が脚光を浴びています。
-        しかしながら、2020年には企業需要に対して40000人以上のデータサイエンティストが不足するとも言われており、データサイエンティスト／AIエンジニアの人材不足が深刻化しつつあります。<br>
-　      そのため、多くのAI開発ベンダーなどはAI人材育成プログラムが展開しており、データサイエンティスト（ここでは便宜上AIエンジニアを含みます）と呼ばれる人材を育てようという試みが行われています。<br>
-　      ここで疑問になるのは、「そもそもデータサイエンティストとはどのような人材なのか？」という点です。<br>
-　      私はいろいろなデータサイエンティストの方とお会いした印象から大きく2種類のデータサイエンティストがいるのだと理解しています。
-　      一般的に多いのはエンジニア系データサイエンティストです。もともとプログラマー／WEBエンジニア／SQL・データマイニングツールなどのデータ分析担当だったりした方が、Python/R言語からデータサイエンススキルを取得してデータサイエンティストとなられた方です。<br>
-　      そして、もう一方は、大学院で数学・統計学・脳科学などのデータサイエンス関連の研究を行い博士課程まで修了してデータサイエンティストになられた方です。この2種類のデータサイエンティストの能力は以下のような大きな違いがあります。
-        </p><br>  
-
-        <h1>データサイエンティストの2つの系統</h1>
-        <img class="img-responsive center-block" src=<%= asset_path "data1-1.png" %>>  
-        <br>
-        <p>
-        　アルファ碁を作成したDeepMind社や日本の深層学習ビジネスを牽引するPFN社などは研究者系データサイエンティストで構成されたプロフェッショナル集団です。
-        自分たちで新しいモデルを構築し、新しい成果を追求します。それには高度な数学的・統計学的な構築力が必要であり、並大抵の努力ではこの域に達することは困難です。<br>
-        　おそらく大半のデータサイエンティストはエンジニア系の方々です。何らかのプログラミングスキルを元々有しており、
-        それを活かしてデータサイエンススキルを学び、ビジネスとして使えるデータサイエンス技術を身に着けます。
-        一般的に目指すデータサイエンティストはエンジニア系データサイエンティストになります。
-        </p><br>
-
-        <h4>データサイエンティストに求められるスキルは「データサイエンス力」に加えて、「ビジネス力」「エンジニアリング力」と広範囲</h4>
-        <div class="col-xs-12" style="background:#A8ACAB; height:1px;" ></div>
-        <p>
-        　つぎにデータサイエンティストに求められるスキルに着目してみます。データサイエンティスト協会の定義ではデータサイエンティストスキルを「データサイエンス力」
-        「ビジネス力」「エンジニアリング力」の3つの領域で定義しています。その3領域に基づいて、弊社では端的にまとめると以下のようなスキルマップになるのではと考えています。
-        </p><br>  
-    
-        <br>  
-        <h1>データサイエンティストスキルマップ</h1>
-        <img class="img-responsive center-block" src=<%= asset_path "data1-2.png" %>>
-        
-        <p>
-        　ビジネス力は弊社の研修サービスで最も重視しているスキルです。データ理解やAIモデルの理解によってビジネスを構築・実施まで導くスキルと言えます。<br>
-        データエンジニアリング力はIT系のデータエンジニアと呼ばれる方々のスキルと同様のものです。インフラ環境を整備して、データ整備を実施し、
-        加工されたデータを分析担当のデータサイエンティストに引き渡すことができるスキルです。<br>
-        最後のデータサイエンス力がコアとなるデータ分析や機械学習モデル構築に係るスキルとなります。スキルマップを見て分かるように、
-        データサイエンティストスキルの基礎は数学と統計学とプログラミングという文系ならうんざりするスキルが必要なことが分かります。
-        </p><br>        
-        
-        <h4>エンジニア系データサイエンティストを目指すなら、数学は一旦忘れよう</h4>
-        <div class="col-xs-12" style="background:#A8ACAB; height:1px;" ></div>
-        <p>
-        　このようにデータサイエンティストになるのは大変広範囲なスキル獲得が求められます。本格的に学ぼうとすると大変な時間と労量を必要とします。
-        よって、これからデータサイエンティスト（含むAIエンジニア）を目指したいという方は、数学は忘れてR言語から始めるのをお勧めしています。<br>
-       　 「一番の基礎になっている数学を無視して大丈夫かよ？」と思われたと思いますが、これには2つの理由があります。<br>
-        　1つ目に、いきなり微分や線形代数などから始めてしまうと挫折する可能性が高いからです。なんで数学が必要なのかもわからず、ただひたすら数学を勉強する。とりわけ文系出身者には耐え難い状況です・・・<br>
-        　2つ目に、R言語を使ったデータ分析といった実践的な内容から実感してもらう方が効果があり、また初歩的にライブラリーやクラウドAIを利用するだけなら数学的理解は必要ないと考えるからです。<br>
-        統計学についても同じで、いきなり難解な統計学書籍を思うとしても途中で挫折するのが落ちです。有名な「ビジネス統計学（上下）」を途中で挫折した方は多いのではないでしょうか・・・
-        </p><br> 
-
-        <h1>統計学の本から取り組むと難しいです。。。</h1>
-        <img class="img-responsive center-block" src=<%= asset_path "data1-3.png" %>>  
-        <br>
-        <p>
-        　統計学はデータ分析を実践しながら、併用的に学んでいくのが良いと思います。
-        実際にその必要性を理解しつつ使っていく方が覚えやすいでしょう。そして、データ分析に慣れてきた段階で、体系的に学問としての統計学を学習すると頭に入りやすいです。
-        </p><br>
-
-        <h4>はじめに基礎的なデータ分析力を身に着けてから数学知識の補強をしていこう！</h4>
-        <div class="col-xs-12" style="background:#A8ACAB; height:1px;" ></div>
-        <p>
-        　弊社ではまずはエクセル分析やR言語を利用した簡易的なデータ分析と統計知識の学習からスタートして、
-        より中身を理解する必要性を感じた段階で数学を勉強するという流れをお勧めしています。<br>
-        　AIモデル構築を実施していると、パラメーターの設定の意味を理解したくなったり、モデルの意味を理解したくなったりすることがあります。
-        数学的知識が必要だと感じることができるため、数学への学習意欲が湧いてくるものです。その時こそが数学や統計学をしっかりと勉強して、更にスキルを伸ばしていくタイミングとなります。
-        無理に数学と統計学から始めないで、まずは機械学習を使ったデータ分析から実践していくことがデータサイエンティスト学習を容易にさせてくれるのです。<br>
-        　このデータサイエンティストの道では、文系の方でも少しずつデータサイエンティストのもつスキルを獲得できるステップを紹介していければと思います。それでは！
-        </p><br> 
-
-    </div>
-    </div>
+<div class="jumbotron" style="background:url(<%= asset_path "main.png" %>) no-repeat; background-site:cover;">
+    <h1>AIモデル開発人材育成</h1>
+    <p>あなたはAIエンジニア／データサイエンティストへのスキルアップを目指していませんか？　
+    本講座ではAIモデル構築力を養うための効果的かつ効率的な学習ステップについてお教えします。
+    </p>
 </div>
+        
+<div class="container"> 
+    <div class="exp">       
+        <h4><b>AI（人工知能）開発スキルの最適な学び方を学ぶ講座</b></h4>
+            <table style="font-size:20px;">
+              <tr>
+                <td width="1120">
+                  <b><h7>AIビジネス推進人材に必要なスキルとその育成方法</h7></b>
+                　<ul>
+                　    <li>AI開発プロジェクトの基礎</li>
+                　    <p>このレクチャーで、はAI開発やAIプロジェクトを把握して、AI活用に必要なスキル体系を理解します。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/jZjL6-K7caY"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                　    <li>AI人材のトレンドとスキル獲得に向けたロードマップ</li>
+                　　 <p>
+                　　   AI人材を整理したうえで  AIの民主化トレンドがAI人材にどのような影響を与える見込みなのかを理解します。さらにAIスキル獲得に向けた基本ロードマップを説明します。
+                　　 </p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/7EdMqbSAASI"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                     <li>AIビジネス企画立案の実態/li>
+                     <p>このレクチャーでは、AIビジネス企画立案ステップを確認してから、実際に弊社がベンチャー企業創業支援時に作成したAI企画書に基づいて具体的な進め方を学習していきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/7601iFdKnXY "
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                         <br>
+                     <li>後半：AIビジネス企画の実効性検証</li>
+                　　 <p>このレクチャーでは、AIビジネス企画の実効性を検証して、ビジネスとしての精度を高めるステップについて学習します。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/x-nX-TOMCV0"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                　</ul>
+                </td>
+              </tr>
+            </table>
+    </div>
 
-
-
-        <div class="col-xs-12" style="background:white; height:100px;">     
-            <div class="logo2">
-                <%= link_to image_tag("inquiry2.png"),inquiry_path %>
+    <div class="row">
+        <div class="col-xs-12" style="padding:0; background:#FFFFFF; height:150px;">
+            <h2>掲載資料</h2>
+            <h8><center>動画の資料は以下のページで閲覧・ダウンロードできます。</h8></center>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 style"="background:#ffffff; " >
+            <div class="youtube-container">
+                <h1 align="center">    
+                <iframe id="player" type="text/html" width="640" height="390"
+                  src="//www.slideshare.net/slideshow/embed_code/key/sThgRRAiyTYLat"
+                  frameborder="0" allowfullscreen="true"></iframe>
+                </h1>
+                
+            </div>  
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 style"="background:#ffffff; " >
+            <div class="youtube-container">
+                <h1 align="center">    
+                <iframe id="player" type="text/html" width="640" height="390"
+                  src="//www.slideshare.net/slideshow/embed_code/key/1N9MVVJxeFLd6k"
+                  frameborder="0" allowfullscreen="true"></iframe>
+                </h1>
+            </div>  
+         </div>  
+     </div> 
+    <br><br>
+    
+    <div class="row">
+        <div class="col-xs-12" style="padding:0; background:#FFFFFF; height:150px;">
+            <h2>そのほかのAI人材育成コンテンツ</h2>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" style="background:#FFFFFF; height:300px;">
+            <div class= "gaiyo">
+                <a href="#">
+                <div class="icon"><%= image_tag "thinking.png" %></div>
+                <h1>AI開発人材の育成方法</h1>
+                <p>
+                実際にデータサイエンティストやAIエンジニアとしてAI開発を担う人材として、スいるアップするために、オンラインのUdemy講座を中心として学習・育成方法をお教えします。
+                </p>
+                </a>
             </div>
         </div>
-</div>
+        <div class="col-md-6 col-sm-6 col-xs-12" style="background:#FFFFFF; height:300px;">
+            <div class= "gaiyo">
+                <a href="seminar">
+                <div class="icon"><%= image_tag "teacher.png" %></div>
+                <h1>AIビジネス推進人材育成プログラム</h1>
+                <p>
+                この講座で説明しているAIビジネス人材スキルを獲得するために、弊社で２日間の短期トレーニングプログラム「AIビジネス育成プログラム」を提供しています。
+                </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
 
+    <div class="row">
+   　　<div class="logo2">
+        <%= link_to image_tag("yoyaku.png"), reserve_path %>
+    　</div>
+    </div>
+</div>
