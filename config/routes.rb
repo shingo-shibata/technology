@@ -20,7 +20,6 @@ Rails.application.routes.draw do
   get "static_pages/consulting2" => 'static_pages#consulting2'
   get "static_pages/bot" => 'static_pages#bot' 
   get "static_pages/service" => 'static_pages#service'
-　get "static_pages/training_business" => 'static_pages#training_business'
   
   ##### Udemyリンク
   get "static_pages/udemy" => redirect("https://www.udemy.com/ai-business/learn/v4/overview")
