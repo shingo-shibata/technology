@@ -21,8 +21,6 @@ Rails.application.routes.draw do
   get "static_pages/bot" => 'static_pages#bot' 
   get "static_pages/service" => 'static_pages#service'
   
-  ##### Udemyリンク
-  get "static_pages/udemy" => redirect("https://www.udemy.com/ai-business/learn/v4/overview")
   
   ##### メディアリンク
   get "static_pages/ainow" => redirect("http://ainow.ai/")
@@ -80,6 +78,8 @@ Rails.application.routes.draw do
   
   get "learning/data1" => 'learning#data1'
   get "learning/data2" => 'learning#data2'
+  
+  get "static_pages/learning/business1" => redirect("http://www.edutech.co.jp/learning/business1")
 
   ##### 問い合わせフォーム
   get 'inquiry' => 'inquiry#index' 
