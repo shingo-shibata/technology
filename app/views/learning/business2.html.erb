@@ -1,87 +1,258 @@
-        <div class="jumbotron" style="background:url(<%= asset_path "main.png" %>) no-repeat; background-site:cover;">
-            <h1>データ分析の組織での活かし方</h1>
-        </div>
-        
-
-
-<div class="learning">            
-    <div class="row">
-    <div class="col-md-8 col-md-offset-2" style="background:#ffffff; " >
-        
-        <h4>AIを活用したい！という前に、あなたの会社のデータ分析力はどのようなレベルにいますか？</h4>
-        <div class="col-xs-12" style="background:#A8ACAB; height:1px;" ></div>
-        <p>
-        　現在使われている機械学習ベースのAIは統計数学や統計学をベースにしたものです。
-        そのため機械学習を利用したデータ分析プロジェクトとAIによる予測モデル導入には大きな違いがありません。
-        機械学習自体は昔から利用されてきたものですが、
-        最近のAIブームにのってAIを使った予測モデルと言い直している例も実は多いのが現実です。
-        </p><br>  
-
-        <h1>統計分析と機械学習イメージ</h1>
-        <img class="img-responsive center-block" src=<%= asset_path "business2-1.png" %>>  
-        <br>
-        
-        <p>
-        　AIモデルやAIサービス導入を検討するプロジェクトはデータ分析プロジェクトと大変近似していますし、
-        導入されたAIモデルの運用には自社のデータ分析力に依存することも多々あります。そのため、AIを導入したいと企業は多いのですが、
-        自社のデータ分析力が不足していると出来上がったAIモデルの運用・管理などができず、上手く扱えない可能性があります。<br>
-        　こうした背景から実際に予測分析モデル導入プロジェクトなどを始める際には、クライアントのデータ分析チームやその能力、
-        所有するデータなどを確認することが重要となります。「データ分析はやっています」という企業でも、
-        単なるエクセル分析であったり、SQLを利用したデータマイニングであったり、R言語などのデータ分析言語を駆使していたりと会社によって、その定義はまちまちです。
-        よって自社のデータ分析力がどの程度なのかを客観的に把握する必要があります。<br>
-        　そこでトーマス・H・ダベンボートの『分析力を武器とする企業』には企業のデータ分析力のレベル表などが載っているので、『分析力を駆使する企業と』と共に一読してみると良いでしょう。
-        </p>
-        <br>  
-        
-        <h1>企業のデータ分析レベル</h1>
-        <img class="img-responsive center-block" src=<%= asset_path "business2-2.png" %>>
-        <h2>参考：トーマス・H・ダベンボートの『分析力を武器とする企業』</h2><br>  
-  　　    <img class="img-responsive center-block" src=<%= asset_path "business2-3.png" %>>
-        <br><br>    
-        <h4>社内でデータ分析を活かして、活用するためには相当な努力が必要です。</h4>
-        <div class="col-xs-12" style="background:#A8ACAB; height:1px;" ></div>
-        <p>
-        　社内でデータ分析が活用されるような体制を構築するには大変な努力を必要とします。そもそも経営陣に如何にしてデータ分析の必要性を理解してもらうための意識づけし、
-        データ分析結果を実際に活用してもらうための意思決定をしてもらうためには、様々な組織内調整などの多大なコミュニケーションや社内の意識改革が必要となります。<br>
-        　大阪ガスのデータ分析チームはそうした困難を後超えて、データ分析で成果をあげている稀有な例として有名です。
-        　河本薫さん著作の「会社を変える分析の力」と「最強のデータ分析組織」は社内でデータ分析を活かすための示唆が多く見受けられるため一読してみると良いでしょう。
-        </p><br>  
-
-        <img class="img-responsive center-block" src=<%= asset_path "business2-4.png" %>>
-        <br>  
-        
-        <p>
-        　また、データ分析によって事業戦略を打ち出す意思決定については、元USJのマーケティングを担当していた森岡毅さん／今西聖貴さんの
-        「確立思考の戦略論」が参考になります。データ分析によって、ハリーポッター施設の投資をすることでUSJの来場者数を右肩上がりに増加させた過程が大変参考になります。
-        </p><br>   
-
-        <img class="img-responsive center-block" src=<%= asset_path "business2-5.png" %>>
-        <br> <br>   
-
-        <h4>目標とすべき理想的なデータサイエンティスト組織とは？</h4>
-        <div class="col-xs-12" style="background:#A8ACAB; height:1px;" ></div>
-        <p>
-        　目標とすべき理想とするデータサイエンティスト組織は経営陣や経営企画室などの意思決定を直接的に支援できるような体制を構築し、
-        各部門とも部門横断的なコミュニケーションをとれるようなミッションや権限を有した組織ができることです。
-        </p><br>  
-
-        <h1>理想的なデータサイエンティストチーム</h1>
-        <img class="img-responsive center-block" src=<%= asset_path "business2-6.png" %>>
-
-        <p>
-        　実際にこのような理想的な体制は困難ではありますが、まずはデータ分析を各部門で徹底し、
-        データに基づく意思決定や業務改善を社内で少しずつ活用できるようにすることがAIを活かすための利生的な組織作りの一歩となるはずです。
-        データ分析や機械学習による自動化の効果が出やすい小規模で短期に集結可能なデータ分析プロジェクトを実施して、社内で成果を少しずつ出すことで、
-        社内にデータ分析の役割を一歩一歩浸透させていくような地道な努力をすることが、まずは大事になります。
-        </p><br> 
-
-    </div>
+<div class="jumbotron" style="background:url(<%= asset_path "main.png" %>) no-repeat; background-site:cover;">
+    <h1>AIモデル開発人材育成</h1>
+    <p>あなたはAIエンジニア／データサイエンティストへのスキルアップを目指していませんか？　
+    本講座ではAIモデル構築力を養うための効果的かつ効率的な学習ステップについてお教えします。
+    </p>
 </div>
+        
+<div class="container"> 
+    <div class="exp">       
+        
+         <center><h4><b>超初心者のためのAI（人工知能／機械学習）によるビジネスモデル立案検討講座（基礎編）</b></h4></center>
+         <div class="col-md-12" style="background:#A8ACAB; height:1px;" >
+         </div>
+            <table style="font-size:20px;">
+              <tr>
+                <td width="1000">
+                  <b><h7>まずはAIビジネスを知る</h7></b>
+                　<ul>
+                　    <li>AIとそのビジネス活用を知る</li>
+                　    <p>このレクチャーでは本講座の全体像を理解した上で、そもそもAIとはどんなものなのかを実際のディープラーニングモデルの動きを確認して理解していきます。その上でAI活用に必要なビジネス力の説明をします。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/dLc0IwhsEMA"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                　　 <li>事例から見るAIの全体像</li>
+                　　 <p>このレクチャーでは、AIが出来る事を多数の事例を利用して確認することで現在のAI機能／AIの活用状況について理解します。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/-WEklbPp9h8"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                　</ul>
+                </td>
+              </tr>
+            　<tr>
+                <td width="1000">
+                  <b><h7>AIモデルキャンバスの学習</h7></b>
+                　<ul>
+                     <li>AIビジネスキャンバスの学習</li>
+                     <p>このレクチャーではAI活用におけるビジネス力とAIが出来る事の概要を把握し、AIモデルキャンバスの基礎的な利用ができるようになります。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/8Y5OngU-ksI"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                     <li>画像識別の出来る事／出来ない事</li>
+                     <p>このレクチャーでは、AIの最も基本で重要な機能である「画像識別」について学んでいただき、画像識別が出来る事／出来ない事の基準を理解していただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/_QZxb2F5QFI"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                     <li>ケーススタディ１：きゅうりの画像識別（回答）</li>
+                     <p>ケーススタディ１では、AIモデルキャンバスを利用の仕方を具体的に理解してもらうために、簡単な「きゅうりの仕分けシステム」のケースに取り組んでいただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/k-ctp4lppgI"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                　</ul>
+                </td>
+              </tr>
+            　<tr>
+                <td width="1000">
+                  <b><h7>AIの基礎知識</h7></b>
+                　<ul>
+                     <li>AIの基礎知識（機械学習）</li>
+                     <p>このレクチャーでは、AIビジネスモデル立案の基礎になる、現在使われているAIの仕組みに係る基礎知識として機械学習を学んでいただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/fm_E1sVhjmU"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                     <li>AIの基礎知識（ディープラーニング）</li>  
+                     <p>このレクチャーでは、機械学習の中でも一番注目されているディープラーニング／深層学習の仕組みについて学んでいただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/Nd_yN5iIRdY"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                     <li>AIの基礎知識（深層強化学習）</li>
+                     <p>このレクチャーでは、AIの基礎知識の中でも最も最新となる深層強化学習について、人間を超えた囲碁AIである「アルファ碁」を事例に学んでいただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/lFuZ6Al-asM"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                　</ul>
+                </td>
+              </tr>
+              
+            　<tr>
+                <td width="1000">
+                  <b><h7>AIが出来ること／出来ないことの確認</h7></b>
+                　<ul>
+                    <li>AIが出来ること／出来ないこと①～②</li>
+                    <p>AIが何ができて、何が出来ないのかを理解し、AI企画を作る上での基礎的な可否の基準を得ることができます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/kfnQwk1UvY"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                    <li>ケーススタディ２：出来ないことの判別（回答）</li>
+                    <p>このケーススタディ２では、AIが出来ないことを理解するために、５つのAI検討案についての実現可否を確認していただき、AIが出来ないことを判別する感覚を学んでいただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/tO_klIC8Ul8"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                    <li>AIが出来ること／出来ないこと③～④</li>
+                    <p>このレクチャーでは、AIが出来ないことの中でも、「AIの精度」について学んでいただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/5DZAVr81cPg"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                    <li>ケーススタディ３：AIの精度の担保（回答）</li>
+                    <p>このケーススタディ３では、AIの精度の担保について深く考えてもらうために、自動運転車におけるAI活用について失敗しないための工夫を検討していただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/WQWwGfvcJQo"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                　</ul>
+                </td>
+              </tr>
+             
+            　<tr>
+                <td width="1000">
+                  <b><h7>AIビジネス検討の総合演習</h7></b>
+                　<ul>
+                    <li>ケーススタディ４：医療におけるAI活用</li>
+                    <p>このケーススタディ４では、本講座の総まとめとして、画像識別を利用した医療現場でのAI活用についてAIビジネスモデルを考えていただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/EMkyx6lQwFw"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                    <li>ケーススタディ４：医療におけるAI活用（回答）</li>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/ho2hPt9etBY"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                    <li>ケーススタディ５：データの整備</li>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/PoAPANhgB8g"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                        <br>
+                    <li>ケーススタディ５：データの整備（回答）</li>
+                    <p>このケーススタディ５では、回答例として提示した内容につける「データの視点」の内容を詳細に検討していただきます。</p>
+                        <div class="youtube-container">
+                            <h1 align="center">    
+                            <iframe id="player" type="text/html" width="320" height="195"
+                              src="https://www.youtube.com/embed/PoAPANhgB8g"
+                              frameborder="0" allowfullscreen="true"></iframe>
+                            </h1>
+                        </div>
+                　</ul>
+                </td>
+              </tr>
+            </table><br><br>
+    </div>
 
-        <div class="col-xs-12" style="background:white; height:100px;">     
-            <div class="logo2">
-                <%= link_to image_tag("inquiry2.png"),inquiry_path %>
+    <div class="col-md-6 col-sm-6 col-xs-12 style"="background:#ffffff; " >
+        <div class="youtube-container">
+            <h1 align="center">    
+            <iframe id="player" type="text/html" width="640" height="390"
+              src="//www.slideshare.net/slideshow/embed_code/key/enAbqt8SzW3w1K"
+              frameborder="0" allowfullscreen="true"></iframe>
+            </h1>
+        </div>  
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 style"="background:#ffffff; " >
+        <div class="youtube-container">
+            <h1 align="center">    
+            <iframe id="player" type="text/html" width="640" height="390"
+              src="//www.slideshare.net/slideshow/embed_code/key/MrUlNop4h1UF9y"
+              frameborder="0" allowfullscreen="true"></iframe>
+            </h1>
+        </div>  
+     </div>  
+
+    <div class="row">
+        <div class="col-xs-12" style="padding:0; background:#FFFFFF; height:150px;">
+            <h2>そのほかのAI人材育成コンテンツ</h2>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12" style="background:#FFFFFF; height:400px;">
+            <div class= "gaiyo">
+                <a href="data1">
+                <div class="icon"><%= image_tag "thinking.png" %></div>
+                <h1>AI開発人材の育成方法</h1>
+                <p>
+                実際にデータサイエンティストやAIエンジニアとしてAI開発を担う人材として、スいるアップするために、オンラインのUdemy講座を中心として学習・育成方法をお教えします。
+                </p>
+                </a>
             </div>
         </div>
-</div>
+        <div class="col-md-6 col-sm-6 col-xs-12" style="background:#FFFFFF; height:400px;">
+            <div class= "gaiyo">
+                <a href="seminar">
+                <div class="icon"><%= image_tag "teacher.png" %></div>
+                <h1>AIビジネス推進人材育成プログラム</h1>
+                <p>
+                この講座で説明しているAIビジネス人材スキルを獲得するために、弊社で２日間の短期トレーニングプログラム「AIビジネス育成プログラム」を提供しています。
+                </p>
+                </a>
+            </div>
+        </div>
+    </div>
 
+
+        
+     </div>
+</div>

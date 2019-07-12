@@ -75,6 +75,7 @@ Rails.application.routes.draw do
   get "learning/shin-nihon" => redirect("http://www.meti.go.jp/committee/sankoushin/shin_sangyoukouzou/pdf/013_06_00.pdf")
   get "learning/business1" => 'learning#business1'
   get "learning/business2" => 'learning#business2'
+  get "learning/business3" => 'learning#business3'
   
   get "learning/data1" => 'learning#data1'
   get "learning/data2" => 'learning#data2'
