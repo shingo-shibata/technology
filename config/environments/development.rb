@@ -45,8 +45,8 @@ Rails.application.configure do
   	address:               'smtp17.gmoserver.jp',
   	port:      	           587,
   	domain:                'gmoserver.jp',
-  	user_name:             "no_replay@edutech.co.jp",
-  	password:              "PZ9wVZ$A",
+  	user_name:             Rails.application.secrets.mail,
+  	password:              Rails.application.secrets.pass,
   	authentication:        'plain',
   	enable_starttls_auto:  true
   }
