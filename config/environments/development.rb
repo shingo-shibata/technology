@@ -42,9 +42,9 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  	address:               'smtp.gmail.com',
+  	address:               'smtp17.gmoserver.jp',
   	port:      	           587,
-  	domain:                'gmail.com',
+  	domain:                'gmoserver.jp',
   	user_name:             Rails.application.secrets.mail,
   	password:              Rails.application.secrets.pass,
   	authentication:        'plain',
