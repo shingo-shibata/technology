@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "edutech.reply.only@gmail.com"
+  default from: "no_replay@edutech.co.jp"
   layout 'mailer'
 end
