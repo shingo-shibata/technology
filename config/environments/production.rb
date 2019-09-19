@@ -83,11 +83,11 @@ Rails.application.configure do
   # メール送信
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  	address:               'smtp17.gmoserver.jp',
+  	address:               'smtp.gmail.com',
   	port:      	           587,
-  	domain:                'gmoserver.jp',
-  	user_name:             'no_replay@edutech.co.jp',
-  	password:              'PZ9wVZ$A',
+  	domain:                'gmail.com',
+  	user_name:             Rails.application.secrets.mail,
+  	password:              Rails.application.secrets.pass,
   	authentication:        'plain',
   	enable_starttls_auto:  true
   }

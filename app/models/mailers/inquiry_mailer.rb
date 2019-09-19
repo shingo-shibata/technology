@@ -1,6 +1,6 @@
 class InquiryMailer < ApplicationMailer
   ##### 送信元アドレス 
-  default from: "no_replay@edutech.co.jp"
+  default from: "edutech.reply.only@gmail.com"
   ##### 送信先アドレス
   default to: "admin@edutech.co.jp"
 
