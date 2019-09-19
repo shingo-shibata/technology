@@ -27,8 +27,8 @@ class ReserveController < ApplicationController
     else
       # 問い合わせ内容をメール送信
       @reserve = Reserve.new(reserve_params)
-      ReserveMailer.received_email(@reserve).deliver
-      ReserveMailer.welcome_email(@reserve).deliver 
+      ::ReserveMailer.received_email(@reserve).deliver
+      ::ReserveMailer.welcome_email(@reserve).deliver 
   
       # 問い合わせ完了画面を表示する
       render :action => 'thanks'
