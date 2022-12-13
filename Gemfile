@@ -40,7 +40,7 @@ gem 'google-analytics-rails', '1.1.1'
 
 gem "meta-tags"
 
-gem "loofah", "2.2.1" 
+gem "loofah", "2.19.1" 
 
 gem "ruby-oembed"
 
